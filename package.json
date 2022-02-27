@@ -1,0 +1,13 @@
+{
+  "name": "@denorid/genfn",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/denokit/genfn"
+  },
+  "author": {
+    "name": "denorid",
+    "url": "https://github.com/denorid"
+  },
+  "license": "MIT"
+}
