@@ -12,9 +12,17 @@ export class FunctionGenerator {
   public constructor(code: string);
   public constructor(code: string[]);
   public constructor(code: string | string[]) {
+    this.generate(code as string);
+  }
+
+  public generate(code: string): this;
+  public generate(code: string[]): this;
+  public generate(code: string | string[]): this {
     (Array.isArray(code) ? code : code.trim().split("\n")).map((line) =>
       this.pushLine(line.trim())
     );
+
+    return this;
   }
 
   public toString(): string {
